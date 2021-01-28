@@ -60,7 +60,7 @@ namespace Exam.Impl
         public IEnumerable<Book> GetAllBooksByDate()
         {
             var filter = from book in books
-                         orderby book.ReleaseDate descending
+                         orderby book.ReleaseDate ascending
                          select book;
             return filter;
         }
